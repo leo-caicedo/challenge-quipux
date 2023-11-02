@@ -22,6 +22,10 @@ public class PrintQuipux {
     public static String validateNum(int num) {
         boolean isEven = num % 2 == 0;
 
+        if (!isEven && num > 20) {
+            return "Quipux";
+        }
+
         if (isEven && num >= 2 && num <= 5) {
             return "No Quipux";
         }
